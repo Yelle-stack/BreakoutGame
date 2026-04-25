@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Breakout</title>
+
     <link rel="stylesheet" href="breakout.css">
     <script src="breakout.js" defer></script>
 </head>
 <body>
-    <canvas id="board"></canvas>
+
+<h2>Breakout Game</h2>
+
+<button id="pauseBtn" class="pause-button">
+    ⏸ Pause
+</button>
+
+<br><br>
+
+<canvas id="board"></canvas>
+
+<!-- Sounds -->
+
+<audio id="bounceSound" src="sounds/bounce.mp3"></audio>
+<audio id="gameOverSound" src="sounds/gameover.mp3"></audio>
+
 </body>
 </html>

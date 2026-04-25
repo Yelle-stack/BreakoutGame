@@ -1,6 +1,8 @@
 body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: white;
 }
 
 #board {
@@ -8,4 +10,43 @@ body {
     border-top: 5px solid skyblue;
     border-left: 5px solid skyblue;
     border-right: 5px solid skyblue;
+}
+
+/* Pause button */
+
+.pause-button {
+    padding: 12px 28px;
+    font-size: 18px;
+    font-weight: bold;
+
+    background: linear-gradient(
+        135deg,
+        #00c6ff,
+        #0072ff
+    );
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+    box-shadow: 0 4px 10px rgba(
+        0,
+        0,
+        0,
+        0.4
+    );
+}
+
+.pause-button:hover {
+    transform: scale(1.05);
+}
+
+.pause-button:active {
+    transform: scale(0.95);
 }
