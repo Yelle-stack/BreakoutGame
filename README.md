@@ -1,48 +1,67 @@
 # 🧱 Breakout Game — JavaScript Canvas
 
-A modern implementation of the classic Breakout arcade game built using HTML5 Canvas, CSS, and vanilla JavaScript.
-This project demonstrates object-oriented programming, real-time game loops, collision detection, and keyboard controls in a browser environment.
+A modern take on the classic Breakout arcade game, built with HTML5 Canvas, CSS and vanilla JavaScript.
+It demonstrates object-oriented programming, a real-time game loop, collision detection and keyboard, mouse and touch controls.
+
+🎮 **[Play the game](LIEN_DU_JEU)**
+
+![Breakout Game](screenshot.png)
 
 ## 🎮 Features
-Player paddle movement using keyboard controls (Arrow keys)
-Ball physics and collision detection
-Brick breaking mechanics
-Score tracking system
-Lives system
-Progressive difficulty (more brick rows after each level)
-Pause functionality (Press P)
-Game Over and restart system (Press Space)
 
-## 🛠 Technologies Used
-HTML5 Canvas
-CSS3
-JavaScript (ES6 Classes)
-Object-Oriented Programming (OOP)
-RequestAnimationFrame game loop
+- Paddle controlled with the keyboard, the mouse or your finger
+- Ball physics: the bounce angle depends on where the ball hits the paddle
+- Brick breaking, score and **high score saved in the browser** (`localStorage`)
+- Lives system and a **launch step** after each lost life
+- **Progressive levels**: one more row of bricks and a faster ball each time
+- Pause / resume
+- Sound effects
+- Game over screen with quick restart
 
-## 🚀 How to Run the Project
-Clone the repository
-git clone https://github.com/your-username/breakout-game.git
-Open the project folder
-cd breakout-game
-Open index.html in your browser
+## 🛠 Technologies
 
-No installation required.
+- HTML5 Canvas
+- CSS3
+- JavaScript (ES6 classes)
+- `requestAnimationFrame` game loop with a capped delta time
 
 ## 🎯 Controls
-Arrow Left → Move paddle left
-Arrow Right → Move paddle right
-P → Pause / Resume game
-Space → Restart after Game Over
 
-## 📌 Future Improvements
-Sound effects
-Multiple levels
-Mobile / touch controls
-High score system
-Power-ups and special blocks
-Responsive design
+| Action | Keyboard | Mouse / touch |
+|---|---|---|
+| Move the paddle | ← / → | Move the pointer or drag |
+| Launch the ball | Space | Click or tap |
+| Pause / resume | P or the Pause button | Pause button |
+| Restart after Game Over | Space | Click or tap |
+
+## 🚀 Run it locally
+
+```bash
+git clone https://github.com/Yelle-stack/breakout-game.git
+cd breakout-game
+```
+
+Then open `index.html` in your browser. No installation or build step needed.
+
+## 📁 Project structure
+
+```
+├── index.html
+├── breakout.css
+├── breakout.js      # Player, Ball, Block and Game classes
+└── sounds/
+    ├── bounce.mp3
+    └── gameover.mp3
+```
+
+## 🔮 Future improvements
+
+- Power-ups and special bricks
+- Different brick colors and patterns per level
+- Mute button
+- Online leaderboard
 
 ## 👩🏻‍💻 Author
 
-Developed as part of a learning journey in front-end web development and game programming.
+**Jelena Zeko** – Full-Stack Developer
+GitHub: [@Yelle-stack](https://github.com/Yelle-stack)
