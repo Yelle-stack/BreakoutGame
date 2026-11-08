@@ -3,7 +3,7 @@
 A modern take on the classic Breakout arcade game, built with HTML5 Canvas, CSS and vanilla JavaScript.
 It demonstrates object-oriented programming, a real-time game loop, collision detection and keyboard, mouse and touch controls.
 
-🎮 **[Play the game](LIEN_DU_JEU)**
+🎮 **[Play the game](https://breakout-game-indol.vercel.app/)**
 
 ![Breakout Game](screenshot.png)
 
